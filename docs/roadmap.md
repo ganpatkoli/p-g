@@ -19,7 +19,7 @@
 | 15 | Inventory + Shop | Pending |
 | 16 | Tournament | Pending |
 | 17 | Anti-exploit | Pending |
-| 18 | Admin panel | Pending |
+| 18 | Admin panel | UI shell done with sample data (AdminPanel/README.md); API and auth pending |
 | 19 | Analytics | Pending |
 | 20 | Optimization | Pending |
 | 21 | QA | Pending |
