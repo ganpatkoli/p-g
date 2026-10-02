@@ -1,0 +1,30 @@
+# Unity
+Client/[Ll]ibrary/
+Client/[Tt]emp/
+Client/[Oo]bj/
+Client/[Bb]uild/
+Client/[Bb]uilds/
+Client/[Ll]ogs/
+Client/[Uu]serSettings/
+Client/.vs/
+*.csproj
+*.sln
+*.pidb.meta
+# .NET
+bin/
+obj/
+# Node
+node_modules/
+.next/
+# Secrets / env
+.env
+.env.*
+!.env.example
+*.pfx
+secrets/
+appsettings.Production.json
+appsettings.*.local.json
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
