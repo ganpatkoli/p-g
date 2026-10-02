@@ -1,0 +1,1 @@
+{ "name": "PoolGame.Client.Input", "rootNamespace": "PoolGame.Client.Input", "references": ["PoolGame.Client.Core", "Unity.InputSystem"], "autoReferenced": true }

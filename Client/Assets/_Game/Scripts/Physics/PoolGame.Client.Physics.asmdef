@@ -1,0 +1,1 @@
+{ "name": "PoolGame.Client.Physics", "rootNamespace": "PoolGame.Client.Physics", "references": ["PoolGame.Core"], "autoReferenced": true }

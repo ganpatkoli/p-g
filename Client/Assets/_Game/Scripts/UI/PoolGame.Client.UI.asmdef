@@ -1,0 +1,1 @@
+{ "name": "PoolGame.Client.UI", "rootNamespace": "PoolGame.Client.UI", "references": ["PoolGame.Core", "PoolGame.Client.Gameplay"], "autoReferenced": true }

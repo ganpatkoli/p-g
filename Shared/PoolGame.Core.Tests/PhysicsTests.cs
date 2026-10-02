@@ -282,3 +282,34 @@ namespace PoolGame.Core.Tests
         }
     }
 }
+
+namespace PoolGame.Core.Tests
+{
+    public class PlaybackAndRespotTests
+    {
+        [Fact]
+        public void TrajectoryPlayer_InterpolatesAndClamps()
+        {
+            var rec = new TrajectoryRecorder(1);
+            rec.Record(0, new[] { new BallState(0, new Vec2(0, 0)) });
+            rec.Record(1, new[] { new BallState(0, new Vec2(2, 0)) { OnTable = false } });
+            var player = new TrajectoryPlayer(rec);
+            var s = new BallState[1];
+            player.Sample(0.5, s); Assert.Equal(1.0, s[0].Position.X, 9); Assert.False(s[0].OnTable);
+            player.Sample(-1, s); Assert.Equal(0.0, s[0].Position.X);
+            player.Sample(9, s); Assert.Equal(2.0, s[0].Position.X);
+            Assert.Equal(1.0, player.Duration);
+        }
+
+        [Fact]
+        public void FindFreeSpot_SlidesPastOccupiedFootSpot()
+        {
+            var cfg = new PhysicsConfig(); var table = new TableConfig();
+            var balls = new[] { new BallState(9, table.FootSpot) };
+            var p = BallPlacement.FindFreeSpot(table.FootSpot, balls, cfg, table);
+            Assert.True(p.X > table.FootSpot.X + 2 * cfg.BallRadius);
+            Assert.Equal(table.FootSpot.Y, p.Y);
+            Assert.Equal(table.FootSpot, BallPlacement.FindFreeSpot(table.FootSpot, new BallState[0], cfg, table));
+        }
+    }
+}

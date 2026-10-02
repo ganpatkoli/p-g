@@ -6,6 +6,7 @@ namespace PoolGame.Core.Physics
     /// All tunable physics values (SI units: metres, kilograms, seconds, radians).
     /// Defaults approximate a regulation 9ft table with 57.15mm balls. Nothing here is hardcoded elsewhere.
     /// </summary>
+    [Serializable]
     public sealed class PhysicsConfig
     {
         // Ball

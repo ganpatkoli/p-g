@@ -3,10 +3,10 @@
 | # | Phase | Status |
 |---|---|---|
 | 1 | Architecture | Done |
-| 2 | Unity project foundation | Pending |
-| 3 | Pool physics | Pending |
-| 4 | Cue + aiming + spin | Pending |
-| 5 | Rules engine | Pending |
+| 2 | Unity project foundation | Done (see docs/phases-2-5.md) |
+| 3 | Pool physics | Done (see docs/phases-2-5.md) |
+| 4 | Cue + aiming + spin | Done (see docs/phases-2-5.md) |
+| 5 | Rules engine | Done (see docs/phases-2-5.md) |
 | 6 | Match state | Pending |
 | 7 | Backend foundation | Pending |
 | 8 | Authentication | Pending |

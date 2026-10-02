@@ -8,6 +8,7 @@ No cash-out, no real-money wagering.
 ## Repository layout
 | Path | Purpose |
 |---|---|
+| `Shared/` | Shared deterministic physics + rules library (`dotnet test Shared/PoolGame.Core.Tests`) |
 | `Client/` | Unity 6 (URP) project — see `docs/architecture.md` §3 |
 | `Server/` | ASP.NET Core solution (Api / Application / Domain / Infrastructure / Tests) |
 | `AdminPanel/` | Next.js + TypeScript admin (Phase 18) |
@@ -15,4 +16,4 @@ No cash-out, no real-money wagering.
 | `docs/` | Architecture, ADRs, roadmap |
 
 ## Status
-Phase 1 (Architecture) — complete. See `docs/roadmap.md`.
+Phases 1-5 complete (architecture, client foundation, physics, cue/aim/spin, rules). See `docs/phases-2-5.md`. See `docs/roadmap.md`.

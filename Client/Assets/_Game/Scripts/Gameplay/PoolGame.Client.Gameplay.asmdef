@@ -1,0 +1,6 @@
+{
+  "name": "PoolGame.Client.Gameplay",
+  "rootNamespace": "PoolGame.Client.Gameplay",
+  "references": ["PoolGame.Core", "PoolGame.Client.Core", "PoolGame.Client.Physics", "PoolGame.Client.Input", "PoolGame.Client.Camera", "Unity.InputSystem"],
+  "autoReferenced": true
+}

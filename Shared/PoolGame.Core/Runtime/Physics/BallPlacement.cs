@@ -19,5 +19,20 @@ namespace PoolGame.Core.Physics
                 if (b.OnTable && b.Id != BallState.CueBallId && Vec2.Distance(pos, b.Position) < 2 * r + 1e-4) return false;
             return true;
         }
+    
+        /// <summary>
+        /// Re-spot position: the requested spot, or the nearest free spot further along the long string (toward the foot rail).
+        /// </summary>
+        public static Vec2 FindFreeSpot(Vec2 spot, IReadOnlyList<BallState> balls, PhysicsConfig cfg, TableConfig table)
+        {
+            double step = 2 * cfg.BallRadius * 1.01;
+            Vec2 p = spot;
+            while (p.X <= table.HalfLength - cfg.BallRadius)
+            {
+                if (IsLegal(p, balls, cfg, table, false)) return p;
+                p = new Vec2(p.X + step, p.Y);
+            }
+            return spot; // table completely blocked along the string: caller keeps the original spot
+        }
     }
 }

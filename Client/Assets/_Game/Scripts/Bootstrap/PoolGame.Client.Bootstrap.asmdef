@@ -1,0 +1,6 @@
+{
+  "name": "PoolGame.Client.Bootstrap",
+  "rootNamespace": "PoolGame.Client.Bootstrap",
+  "references": ["PoolGame.Core", "PoolGame.Client.Core", "PoolGame.Client.Physics", "PoolGame.Client.Input", "PoolGame.Client.Camera", "PoolGame.Client.Gameplay", "PoolGame.Client.UI"],
+  "autoReferenced": true
+}

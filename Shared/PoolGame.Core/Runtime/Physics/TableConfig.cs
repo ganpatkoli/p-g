@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using PoolGame.Core.Geometry;
 
@@ -14,6 +15,7 @@ namespace PoolGame.Core.Physics
     /// Table geometry. Origin is the table centre; X runs along the length. Playing surface is the
     /// rectangle bounded by the cushion faces. Head spot is at -Length/4, foot spot at +Length/4.
     /// </summary>
+    [Serializable]
     public sealed class TableConfig
     {
         public double Length = 2.54;
