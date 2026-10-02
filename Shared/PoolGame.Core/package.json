@@ -1,0 +1,8 @@
+{
+  "name": "com.poolgame.core",
+  "displayName": "PoolGame Core",
+  "version": "0.1.0",
+  "unity": "6000.0",
+  "description": "Engine-agnostic deterministic pool physics and rules. Shared by the Unity client and the ASP.NET server.",
+  "author": { "name": "PoolGame" }
+}
