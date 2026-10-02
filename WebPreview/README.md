@@ -1,6 +1,6 @@
 # Web preview: Coin Pool 8 Ball
 
-`coin-pool.html` is a single-file playable version of the game (not the Unity build). It ports the shared physics core to JavaScript and adds:
+`coin-pool.html` is a single-file, mobile-first (portrait and landscape, touch aim, vibration) playable version of the game (not the Unity build). It ports the shared physics core to JavaScript and adds:
 guest/account sign-in, virtual coin wallet with an append-only ledger, data-driven match tiers, five bot levels
 (candidate generation, geometry check, physics simulation, evaluation, selection), XP/level, Elo rating, daily streak, history and leaderboard.
 
